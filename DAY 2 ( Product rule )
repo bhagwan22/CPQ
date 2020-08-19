@@ -1,0 +1,57 @@
+// PRODUCT OPTION CONSIDERATIONS
+---------------------------------
+1. IF 'Quantity' = 1
+	i.e if selected 1 item will be there and no edit allowed with quantity
+	So, have to use checkbox (Allow Edit) to let sales rep edit quantity while configuring
+
+2. IF 'min Quantity' = 1
+    then 1 quantity will be there if selected and quantity will be editable
+
+- CONFIGURATION in CPQ - meaning when Sales Rep configure quote for the customer
+		
+== XX == XX == XX == == XX == XX == XX == == XX == XX == XX == == XX == XX == XX == == XX == XX == XX == == XX == XX == XX == == XX == XX == XX == XX == XX == XX == 
+
+
+
+									@@@ PRODUCT RULE @@@
+									--------------------
+
+- Complex product bundles often need to be configured in specific ways, otherwise they just don’t work.
+
+(#) PRODUCT RULE: 	impose business logic while configuration.
+	------------	4 TYPES
+					
+					1. Alert rule  -  fire warning/alert messages when there’s a possible issue with the configuration.
+										ex:
+									  	alert, to brought Rep attention if quantity is selected only one.
+					2. Selection rule
+					3. Validation rule
+					4. Filter rule
+					
+				
+	
+	- We specify Name, type, scope, event on fire, Active/InActibe, condition logic(AND, OR, Custom) with the 'PRODUCT RULE'
+		
+		and condition on which it fires given in RELATED LIST  - 'Error Condition' 
+									1. record 1
+									2. record 2
+							Note: error conditonS for 'Product rules' take logic selected in 'PRODUCT RULE'
+															
+	- product rule property : 
+					Type(alert, selection, validation, filter), Scope(on entire quote or at configuration time only)
+					Evaluation event(when to fire-create, edit,save etc..), Condition(ALL=AND and Any=OR), Activate
+							
+	- NOW
+		 to link PRODUCT RULES TO PRODUCTS(many to may) junction object- 'CONFIGURATION RULE'
+		 form 'PRODUCT RULE'-->'RELATED LIST'--> Create configuration rule and Active
+		 
+		 
+_________________
+HOW TO USE
+-----------------
+	1. CREATE PRODUCT RULE
+	2. create error conditon FOR product rule when to fire conditions
+	3. specify for which bundle rule should fire
+	
+		 
+		 
