@@ -3,7 +3,7 @@
 
 	-SLOW MOVING PIPELINE DRAIN YOUR RESOURCE AND WASTE YOUR AND YOUR CUSTOMER'S TIME
 	-HELP MAKE CUSTOMER READY, BEFORE MOVING TO SALES PROCESS i.e maintain brand integrity
-	-Before a sale can be concluded, your client needs to be willing to sign a contract and that's need "timely sales quotes free of any errors adn personalized to their own unique situation"
+	-Before a sale can be concluded, your client needs to be willing to sign a contract and that's need "timely sales quotes free of any errors and personalized to their own unique situation"
 	- not only detailed and precise, but also tailored to the needs of the client.
 	- CPQ software takes everything that your sales teams need to finalize their contracts and all that to your fingertips. which mean just showing them number or treating them as number is not a great Idea for any business, So here comes the Salesforce CPQ
 	
@@ -58,7 +58,7 @@ Product Related list
 
 - we can make an OPTIONS required, automatically selected, quantity, min quantity, edit quantity if already specified(allow checkbox), Number( 10, 20, 30 i.e order), FEATURE(lookup)
 
-- we can set FEATURES order(Number), min product from FEATURE bundele,  
+- we can set FEATURES order(Number), min product must selected from FEATURE bundele,  
 
 
 (*) Account get a ralted list(Quote[CPQ Quote], Contracted Price, Subscription, Asset)
