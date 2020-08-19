@@ -1,0 +1,45 @@
+	
+(#) Bundle: set of products that are always sold together (BUNDLE MULTIPLE PRODUCTS AS ONE)
+				ex: Home security pack(camera, cables, screan, alarm, etc.)
+				
+				NOTE: this bundle can again segregate included products based on categories
+				example
+				
+				#HOME SECURITY PACKAGE[Lead product]  - Configured SKU
+					- Sensors [Feature]
+						* Door Sensors [option]
+						* Window Sensor [option]
+						* Motion Sensor [option]
+					- Camera [Feature]
+						* External camera [option]
+						* DoorBell camera [option]
+						* Internal camera [option]
+					- Service [Feature]
+						* Instalation [option]
+						* Monitoring   [option]
+						
+
+(#) PRODUCT:  we have to Allow(Configuratin type/Event) form product if it is ready for the configurable screan(i.e once product bundle is ready)
+
+    PRODUCT RELATED LIST*
+    --------------------
+(#) OPTIONS(Production Option): 
+
+(#) Feature(Product Feature) : bundling tool for Options
+
+
+    POINTE NOTED*
+    -------------
+- we can make an OPTIONS required, automatically selected, quantity, min quantity, edit quantity if already specified(allow checkbox), Number( 10, 20, 30 i.e order), FEATURE(lookup)
+
+- we can set FEATURES order(Number), min product from FEATURE bundele,  
+
+
+(*) Account record - get a ralted list(Quote[CPQ Quote], Contracted Price, Subscription, Asset)
+
+(*) Quote[CPQ Quote] : button(Edit Line) to add product/bundle
+
+(#) Product Rule: to make sure reps choose right product to sell to bundle
+
+
+
