@@ -1,0 +1,62 @@
+
+		## SBQQ // CPQ OBJECT  - CONFIGURAE PRICE, QUOTE AND SUBSCRIPTION AND RENEWAL
+		https://developer.salesforce.com/promotions/orgs/cpqtrails		
+
+		PRODUCT
+			--> RELATED LIST
+					  Bundle building
+						FEATURE
+						OPTIONS
+		QUOTE 
+		QUOTE LINE ITEM
+		
+		PRODUCT RULE
+				## Error condition
+				## Configuration Rule 
+				
+		PRICING
+				 ## Price for specific customer(SPECIAL PRICES) *****>> Account => Relatedlist(Contract Prices) => Select Product, Price and Expiration date//EXCEPTION TO PRICING
+				 ## PRICING RULE
+						Percent of total:(calculate value of product based on value of other products)
+											Product ==>filed--> Pricing Method(Percentive total)
+											
+				## DISCOUNT SCHEDULED // volume/Teared base pricing
+								Create one and then -->Edit Tear --> Specify QUANTITY range and DISCOUNT range
+							and
+								    Then add the DISCOUNT SCHEDULE lookup on Product
+				
+		PRICE RULE // Price rule do specific condition check for SSBQ_PriceCondition__c(SSBQ_field__c PickList) but we can add more to consider
+				ssbq_priceCondition__c --> SSBQ_field__c  --> add api name of field to consider
+				SSBQ_PriceAction__c --> TargetField ---> Add api name of field to include -- affected bt price rule
+				
+					Related List 
+						# Price Condition
+						#  PriceAction
+						
+				
+		
+		TEMPLATE CONTENT
+		QUOTE TEMPLATES
+				section --> Add Template Content  to it
+				 
+		
+		AMANDMENT
+		RENEWAL
+		
+		
+		SUMMARY VERIABLE
+	
+		SUBSCRIPTION
+					To make a product subscriptiontype
+					Edit "Subscription pricing" on product
+					subscription term Unit --> Days/Month
+					
+					
+		CONTRACT 
+		IS FOR subscription related Products
+		Quote must be have a start date to create a contract
+		Account bust be associated with Quote
+		
+		
+	
+		CODE CALCULATOR PLUGIN // extra plugin
