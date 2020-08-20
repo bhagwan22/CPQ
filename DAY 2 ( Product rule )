@@ -48,7 +48,7 @@ _________________
 HOW TO USE
 -----------------
 	1. CREATE PRODUCT RULE
-	2. create error conditon FOR product rule when to fire conditions
+	2. create conditon FOR product rule when to fire conditions
 	3. specify for which bundle rule should fire
 	
 		 
