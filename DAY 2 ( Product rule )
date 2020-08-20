@@ -37,13 +37,9 @@
 								2. record 2
 							Note: error conditonS for 'Product rules' take logic selected in 'PRODUCT RULE' (All, Any, Custom)
 															
-	- product rule property : 
-					Type(alert, selection, validation, filter), Scope(on entire quote or at configuration time only)
-					Evaluation event(when to fire-create, edit,save etc..), Condition(ALL=AND and Any=OR), Activate
-							
 	- NOW
 		 to link PRODUCT RULES TO PRODUCTS(many to may) junction object- 'CONFIGURATION RULE'
-		 form 'PRODUCT RULE'-->'RELATED LIST'--> Create configuration rule and Active
+		 form 'PRODUCT RULE'-->'RELATED LIST'--> Create 'CONFIGURATION RULE' and Activeate
 		 
 		 
 _________________
