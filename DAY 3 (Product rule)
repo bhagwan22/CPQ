@@ -1,0 +1,32 @@
+
+		@@@ CPQ DAY 3 @@@
+		-----------------
+		
+
+#TYPE 2 product rule(SELECTION)
+
+- handle how a Sales rep are allowed to ineract with a OPTIONS
+	i.e 
+		USED FOR
+		=========
+			Automatically make a option REQUIRED, PRE-SELECTED, DISABLE, HIDE in certain condition
+			
+		used case:
+				if customer is associated with one of our partners, we should not incluse instalation service option.
+				
+		
+		STEPS TO CREATE:
+		1. Create 'Product rule' (type=selected, Evaluation event = Load(usually))
+		2. Create fire conditions 
+		
+		____________________________________________________________________________________________________
+		NOTE: Selection Product Rules must have an Action, which describes what to do to one or more options
+		____________________________________________________________________________________________________
+		   
+		3. in the 'PRODUCT RULE' related list ACTION --> create action of TYPE(add,remove,enable,desabel,enable add, disable remove,show,hide,show & add, hide & remove, default filter, optional filter) - 12 type
+			and 
+			for field 'PRODUCT' - select option for which above type will happen
+			
+		
+		4. final step is to apply 'PRODUCT RULE' with bundle(junction object[Configuration rule])
+		
