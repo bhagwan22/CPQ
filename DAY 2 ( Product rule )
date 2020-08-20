@@ -30,7 +30,8 @@
 					
 				
 	
-	- We specify Name, type, scope(specific product or entire quote), Evaluation event(when configuration page is - save, load, edit, always), Active/InActive, condition logic(AND, OR, Custom), Message with the 'PRODUCT RULE'
+	- We specify Name, type, scope(specific product or entire quote), Evaluation event(specify when rule will be evaluated i.e when configuration page is - save, load, edit, always), 
+	     Active/InActive, condition logic(AND, OR, Custom), Message with the 'PRODUCT RULE'
 		
 	NOW condition on which it fires given in RELATED LIST  - 'ERROR CONDITION' 
 								1. record 1 (Object.field = value)
