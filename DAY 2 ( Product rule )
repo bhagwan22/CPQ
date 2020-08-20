@@ -22,15 +22,15 @@
 	------------	4 TYPES
 					
 					1. Alert rule  -  fire warning/alert messages when there’s a possible issue with the configuration.
-										ex:
-									  	alert, to brought Rep attention if quantity is selected only one.
+									ex:
+									    Alert, to brought Rep attention if quantity is selected only one.
 					2. Selection rule
 					3. Validation rule
 					4. Filter rule
 					
 				
 	
-	- We specify Name, type, scope, event on fire, Active/InActibe, condition logic(AND, OR, Custom) with the 'PRODUCT RULE'
+	- We specify Name, type, scope(specific product or entire quote), Evaluation event(save, load, edit, always), Active/InActive, condition logic(AND, OR, Custom), Message with the 'PRODUCT RULE'
 		
 	NOW condition on which it fires given in RELATED LIST  - 'ERROR CONDITION' 
 								1. record 1
