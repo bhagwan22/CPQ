@@ -33,7 +33,7 @@
 	- We specify Name, type, scope(specific product or entire quote), Evaluation event(save, load, edit, always), Active/InActive, condition logic(AND, OR, Custom), Message with the 'PRODUCT RULE'
 		
 	NOW condition on which it fires given in RELATED LIST  - 'ERROR CONDITION' 
-								1. record 1
+								1. record 1 (Object.field = value)
 								2. record 2
 							Note: error conditonS for 'Product rules' take logic selected in 'PRODUCT RULE' (All, Any, Custom)
 															
