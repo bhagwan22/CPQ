@@ -34,9 +34,10 @@
 	     Active/InActive, condition logic(AND, OR, Custom), Message with the 'PRODUCT RULE'
 		
 	NOW condition on which it fires given in RELATED LIST  - 'ERROR CONDITION' 
-								1. record 1 (Object.field = value)
+								1. record 1 (Like: TestObject.Testedfield = value)
 								2. record 2
-							Note: error conditonS for 'Product rules' take logic selected in 'PRODUCT RULE' (All, Any, Custom)
+							Note: a) all error conditons for 'Product rules' take logic selected in 'PRODUCT RULE' (All, Any, Custom)
+							      b) TestObject can be(Quote, QuoteLine, Quote Line Group, Product Opton, Configuratuon attribute, updated Asset)
 															
 	- NOW
 		 to link PRODUCT RULES TO PRODUCTS(many to may) junction object- 'CONFIGURATION RULE'
