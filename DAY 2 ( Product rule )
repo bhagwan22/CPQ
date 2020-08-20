@@ -32,10 +32,10 @@
 	
 	- We specify Name, type, scope, event on fire, Active/InActibe, condition logic(AND, OR, Custom) with the 'PRODUCT RULE'
 		
-		and condition on which it fires given in RELATED LIST  - 'Error Condition' 
-									1. record 1
-									2. record 2
-							Note: error conditonS for 'Product rules' take logic selected in 'PRODUCT RULE'
+	NOW condition on which it fires given in RELATED LIST  - 'ERROR CONDITION' 
+								1. record 1
+								2. record 2
+							Note: error conditonS for 'Product rules' take logic selected in 'PRODUCT RULE' (All, Any, Custom)
 															
 	- product rule property : 
 					Type(alert, selection, validation, filter), Scope(on entire quote or at configuration time only)
