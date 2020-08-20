@@ -1,3 +1,5 @@
+#  Installing into a Sandbox org is unavailable from the AppExchange links.
+
 pre-requsit
 -----------
 1. Enable email deliverability to all users.
@@ -5,10 +7,14 @@ pre-requsit
 3. Enable Orders.
 4. Enable CRM content.
 
-#  Installing into a Sandbox org is unavailable from the AppExchange links.
+If Salesforce CPQ for the "FIRST TIME", authorize the Salesforce CPQ calculator, below steps
+------------------------------------------------------------------------------------------
+From Setup, enter Installed Packages, and then click Installed Packages.
+Find Salesforce CPQ and click Configure.
+Click the Pricing and Calculation tab.
+Click Authorize New Calculation Service.
 
 # If you choose Install for Specific Profiles, you must also set the Standard User profile to Full Access.
-
 # Salesforce CPQ Profile Permissions : https://help.salesforce.com/articleView?id=cpq_profile_permissions.htm&type=5
 
 
