@@ -1,0 +1,15 @@
+pre-requsit
+-----------
+1. Enable email deliverability to all users.
+2. Enable Chatter.
+3. Enable Orders.
+4. Enable CRM content.
+
+#  Installing into a Sandbox org is unavailable from the AppExchange links.
+
+# If you choose Install for Specific Profiles, you must also set the Standard User profile to Full Access.
+
+# Salesforce CPQ Profile Permissions : https://help.salesforce.com/articleView?id=cpq_profile_permissions.htm&type=5
+
+
+
