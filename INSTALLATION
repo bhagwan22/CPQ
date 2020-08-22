@@ -17,6 +17,23 @@ Click Authorize New Calculation Service.
 # If you choose Install for Specific Profiles, you must also set the Standard User profile to Full Access.
 # Salesforce CPQ Profile Permissions : https://help.salesforce.com/articleView?id=cpq_profile_permissions.htm&type=5
 
+	_________________________________________________________________________________________________________________________________________________________________________
+								@@@@ PERMISSIONS @@@							https://help.salesforce.com/articleView?id=cpq_install_cpq_package.htm&type=5
+	_________________________________________________________________________________________________________________________________________________________________________
+	
+	
+# Create a separate permission set with Read and Write access to quote, quote line group, quote line item, quote template, and quote document objects and assign it to your Salesforce CPQ users.
 
 
-https://help.salesforce.com/articleView?id=cpq_install_cpq_package.htm&type=5
+# new features will be only accessible to user with permission set(Salesforce CPQ Admin/Salesforce CPQ User/Salesforce CPQ Community User). therefore to give custom user with custim CPQ permssion/profile we have to manually give permissons too(read release note)
+
+# user must have Edit permissions for a field to map it to another field.
+	
+--------------------------------------------------------
+# FOR PROFESSIONAL EDITON(special configuration needed): (contact salesforce...)
+--------------------------------------------------------
+since profession editon does not have PROFILE, FILE LEVEL SECURITY or PAGE LAOUT
+So, cpq required additonal set of permission in PROFESSIONAL EDITON.
+	
+  
+  
