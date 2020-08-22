@@ -12,4 +12,4 @@ PRODUCT RULE
 	ACTION
 	CONFIGURATION RULE
 
-SUMMARY VARIABLE: Summary Variable represents a number that is found by aggregating many record(many or all type)
+SUMMARY VARIABLE: Summary Variable represents a number that is found by aggregating records(any or all type)
