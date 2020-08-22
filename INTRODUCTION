@@ -26,4 +26,8 @@ quote line item
 quote template
 quote document objects
 
+# permission sets
+------------------
  Salesforce CPQ Admin
+ Salesforce CPQ User
+ Salesforce CPQ Community User 
