@@ -9,7 +9,7 @@
 	i.e 
 		USED FOR
 		=========
-			Automatically make a option REQUIRED, PRE-SELECTED, DISABLE, HIDE in certain condition
+			Automatically make a option ADD, REMOVE, REQUIRED, PRE-SELECTED, ENABLE, DISABLE, SHOW, HIDE in certain condition
 			
 		used case:
 				if customer is associated with one of our partners, we should not incluse instalation service option.
