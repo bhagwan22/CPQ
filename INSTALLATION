@@ -27,7 +27,6 @@ Click Authorize New Calculation Service.
 	
 # Create a separate permission set with Read and Write access to quote, quote line group, quote line item, quote template, and quote document objects and assign it to your Salesforce CPQ users.
 
-
 # new features will be only accessible to user with permission set(Salesforce CPQ Admin/Salesforce CPQ User/Salesforce CPQ Community User). therefore to give custom user with custim CPQ permssion/profile we have to manually give permissons too(read release note)
 
 # user must have Edit permissions for a field to map it to another field.
