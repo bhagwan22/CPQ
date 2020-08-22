@@ -1,5 +1,8 @@
 #  Installing into a Sandbox org is unavailable from the AppExchange links.
 
+# support 6 language : [English, German, Japanish, France, Spanish(Maxican), Brazilian]
+						i.e  CPQ-specific values are translated only for the six CPQ languages.						
+
 pre-requsit
 -----------
 1. Enable email deliverability to all users.
@@ -18,7 +21,7 @@ Click Authorize New Calculation Service.
 # Salesforce CPQ Profile Permissions : https://help.salesforce.com/articleView?id=cpq_profile_permissions.htm&type=5
 
 	_________________________________________________________________________________________________________________________________________________________________________
-								@@@@ PERMISSIONS @@@							https://help.salesforce.com/articleView?id=cpq_install_cpq_package.htm&type=5
+	@@@@ PERMISSIONS @@@			https://help.salesforce.com/articleView?id=cpq_install_cpq_package.htm&type=5
 	_________________________________________________________________________________________________________________________________________________________________________
 	
 	
