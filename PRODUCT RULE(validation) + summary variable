@@ -1,0 +1,50 @@
+
+	
+	SUMMARY VARIABLE : this is a AGGREGATE FORMULA(count, sum, avg, max, min) aggregate records(specific type or all type).
+	
+	options:
+			- aggregate FUNCTION(count, sum, avg, max, min)
+			- Target Object(object whose fild to aggregate) - [Quote line, Product option, Asset, subscripton]
+			- aggregate FIELD(fields to aggregate)
+			- Filter Field(target object RECORDS FILTER BASED ON THIS FIELD i.e - fieldName operator(equal,less...) value/QUOTE FILED
+			- save
+
+    ____________________________________________________________________________________________________________________
+	@@@ CPQ - PRODUCT RULE(validation)
+	____________________________________________________________________________________________________________________
+	
+	# similar to alert validation rule - The difference is that while Alerts allow sales reps to BYPASS the message, Validations COMPLETELY STOP them from saving—preventing the creation of invalid quotes. 
+	
+	used case:
+				1. to prevent selling two warrenty+instalment bundle for wahing machine
+				2. prevent more then one 'home secutity console' bundle form selling in a quotes
+				
+	
+	EX1:
+		let's say we want to stop Reps form including more then one 'HOME SECURITY CONSOLE' in a quote
+		
+	to create validation
+	--------------------
+	1. analyse scope - since this time the validation should inclue whole quote not just the productBundle it's scope should be QUOTE
+	
+	2. create a SUMMARY VARIABLE(to count no. of 'HOME SECURITY CONSOLE' in a quote)
+	
+	3. Type = Validation
+	4. Scope = Quote 
+	5. Evaluation event = save
+	6. message
+	7. save
+	
+	Create ERROR CONDITION(related list: PRODUCT RULE) -  Error Condition that controls when the rule fires
+	--------------------------------------------------
+	Note: since we will be using 'summary variable' not any object field to set ERROR CONDITON. so select 'Tested Variable'
+	
+		1. create new
+		2. Tested variable = <SUMMART VARIABLE WE HAVE CREAGTED>   
+		3. operator = greate than  
+		4. Filter Type =Value 
+		5. Filter value = 1
+		6. SAVE
+	
+	# no need to specify 'CONFIGURATION RULE' (jucnction object) since scope=Quote + save(so it automatically fire and check  anytime a quote is save)
+	
