@@ -1,0 +1,38 @@
+
+Configuration Attributes :
+-------------------------
+- Create a set of configuration attributes so that users can quickly assign the attributes to any number of product options.
+- Each configuration attribute set is shown in a collapsible drawer below each product option in the configurator.
+- used to specify additional(picklist) attribute with the product option(all or specific)
+- based on selection then we can configure our PRODUCT RULE
+
+	EXAMPLE(use case): Add one picklist for shipping country(us, world whide)
+					   if value is US then no Shiping cost is charged
+					   STEP:
+					  ======
+						1. create "Shipping Info" picklist field at 'Product Option' 
+						2. Go to Product(Bundle Product) => Related List(Configuration Attribute) => 
+							- (Target field(Picklist) = Value should be similar to API name of the product option field which will hold the attribute value. If not present add the API name to the Picklist(Target Filed))
+							- Select to place on Bundel(PRODUCT OPRTION) or on feature.
+							- Set placement(row or column index)
+							- NOW we can careate PRODUCT RULE based on configuration attribute
+							
+					   
+
+	- Configuration attribute is of 2 TYPE (record type)
+      a) Global Attribute - 	used with any product option
+      b) Bundle type 		-	used with specific bundle option
+
+	- We have to enable global attributes in your Salesforce CPQ package settingse else only bundle type is only there.
+	
+	- global attribute changes field values for only the product option it’s assigned to.
+
+
+# ATTRIBUTE SET : 
+				 - An attribute set groups several global attributes together in the form of attribute items.
+				 
+
+NOTE: 
+1. When we configure the CPU cooling bundle, Salesforce CPQ shows each global attribute as a picklist on each product option.	
+2. Configuration attributes always map to the bundle parent’s quote line. They map to the bundle’s child products only when the configuration attribute’s Apply to Product Options field is enabled. Mapping occurs only for quote lines that are product options of the bundle containing the configuration attribute.
+
