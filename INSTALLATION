@@ -30,6 +30,35 @@ Click Authorize New Calculation Service.
 # new features will be only accessible to user with permission set(Salesforce CPQ Admin/Salesforce CPQ User/Salesforce CPQ Community User). therefore to give custom user with custim CPQ permssion/profile we have to manually give permissons too(read release note)
 
 # user must have Edit permissions for a field to map it to another field.
+
+
+//INSTALATION & SETTING
+	Here’s a list of some commonly used package settings that you may want to modify.
+	  1. Allowing partner discounts on quote lines
+	  2. Adjusting the number of decimal places in your unit prices.
+	  3. Adding storage folders for your quote documents
+	  4. Grouping quote line editor search results by shared fields
+	  5. Using solution groups to store commonly quoted sets of products in the quote line editor
+			
+
+OPPORTUNITY LAYOUT
+------------------
+# Add the PRIMARY QUOTE field to opportunity page layouts(automatically looks up to the primary quote for the opportunity). 
+                                                          If the primary quote changes, Salesforce CPQ updates this field accordingly.
+							  
+# Add the Quote Documents related list to the opportunity page layouts of any user who will send or track quotes.
+
+
+# every company want to track quote through it's lifecycle. 
+	for the process CPQ recommend updating the quote’s Status field with your company’s custom status values. 
+	By default, CPQ quotes have the following statuses.
+		Draft
+		In Review
+		Approved
+		Denied
+		Presented
+		Accepted
+		Rejected
 	
 --------------------------------------------------------
 # FOR PROFESSIONAL EDITON(special configuration needed): (contact salesforce...)
