@@ -1,0 +1,40 @@
+
+
+
+'twin fields' - identical field(have matching field types, and have matching API names)
+				used for when we have to pass custom field values from the first object to the second object
+				note:
+				1. To map one field to another, you need Read access on the source field and Edit access on the target field.
+				2. Standard fields can’t be mapped between objects.
+				
+	
+				
+MAPPING
+--------
+
+# PRIMARY QUOTE field to opportunity page layouts(automatically looks up to the primary quote for the opportunity). 
+                                                          If the primary quote changes, Salesforce CPQ updates this field accordingly.
+
+# Salesforce CPQ maps from 'opportunity products' to quote lines only for standalone products and only when opportunity products have been created before a sales rep creates the opportunity’s first primary quote.
+
+# Order 'Payment Term'(picklist) map from Quote 'Payment terems'(picklist) so if any new value added to Quote 'Payment Term' the similar value should be added to global picklist 'Payment Term'
+
+# Order Product = Quote Line
+
+# Invoice Line = Order Product
+
+# Opportunity Product = Quote Line
+
+# Subscription = Quote Line
+# Quote Line = Subscriptions
+
+# Contract Line Item = Quote Line
+# Quote Line = Contract Line Item
+
+# Asset = Quote Line
+# Quote Line = Asset(Salesforce CPQ maps from the asset back to the quote line only during amendment and renewal processes when quote lines are generated from assets.)
+
+
+NOTE: If we make a bundle a Favorite and then add that favorite to the quote line editor, it won’t capture any twin field values.
+
+
