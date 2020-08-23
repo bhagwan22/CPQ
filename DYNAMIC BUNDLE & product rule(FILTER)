@@ -1,0 +1,19 @@
+
+
+# PRODUCT RULE(filter)
+ - only used with dynamic bundle
+ 
+   ____________________________________________________________________________________________________________________
+   
+	DYNAMIC BUNDLE
+	--------------
+		# some time the products option can increase with time. To make more flexible bundle so not everytime CPQ admin have to configure bundle we can use dynamic bundle
+		
+		- dynamic bundle can be based on PRODUCT FAMILY, etc... i.e whenever a user will add a product to master List and assign the product family = HARDWARE(example), those product will be automatically available to Bundle inside the quote line editor.
+		
+		- FEATURE(option selection Method = Dynamic)
+		
+		- create field on product and product option(same API name)
+		
+		
+   ____________________________________________________________________________________________________________________
