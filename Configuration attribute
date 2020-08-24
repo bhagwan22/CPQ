@@ -1,9 +1,8 @@
 
 Configuration Attributes :
 -------------------------
-- Create a set of configuration attributes so that users can quickly assign the attributes to any number of product options.
+- Create a set of configuration attributes so that users can quickly assign the attributes to multiple product optionsa at once.
 - Each configuration attribute set is shown in a collapsible drawer below each product option in the configurator.
-- used to specify additional(picklist) attribute with the product option(all or specific)
 - based on selection then we can configure our PRODUCT RULE
 
 	EXAMPLE(use case): Add one picklist for shipping country(us, world whide)
