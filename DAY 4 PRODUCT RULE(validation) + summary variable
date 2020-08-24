@@ -2,7 +2,7 @@
 	
 	SUMMARY VARIABLE : this is a AGGREGATE FORMULA(count, sum, avg, max, min) aggregate records(specific type or all type).
 	
-	options:
+	values:
 			- aggregate FUNCTION(count, sum, avg, max, min)
 			- Target Object(object whose fild to aggregate) - [Quote line, Product option, Asset, subscripton]
 			- aggregate FIELD(fields to aggregate)
