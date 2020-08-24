@@ -7,14 +7,14 @@ Configuration Attributes :
 
 	EXAMPLE(use case): Add one picklist for shipping country(us, world whide)
 					   if value is US then no Shiping cost is charged
-					   STEP:
-					  ======
-						1. create "Shipping Info" picklist field at 'Product Option'  // ALSO configure the same API name field on quote Line aswell
-						2. Go to Product(Bundle Product) => Related List(Configuration Attribute) => 
-							- (Target field(Picklist) = Value should be similar to API name of the product option field which will hold the attribute value. If not present add the API name to the Picklist(Target Filed))
-							- Select to place on Bundel(PRODUCT OPRTION) or on feature.
-							- Set placement(row or column index)
-							- NOW we can careate PRODUCT RULE based on configuration attribute
+	   STEPs:
+	  ======
+		1. create "Shipping Info"(picklist) field at 'Product Option'  // ALSO configure the same API name field on quote Line aswell
+		2. Go to Product(Bundle Product) => Related List(Configuration Attribute) => 
+		- on Target field(Picklist) add a Value should with similar to API name of the product option(field) which will hold this attribute value. If not present add the API name to the Picklist(Target Filed))
+			- Select to place on Bundel(PRODUCT OPRTION) or on feature.
+			- Set placement(row or column index)
+			- NOW we can careate PRODUCT RULE based on configuration attribute
 							
 					   
 
