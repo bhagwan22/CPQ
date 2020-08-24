@@ -16,7 +16,7 @@
 	# similar to alert validation rule - The difference is that while Alerts allow sales reps to BYPASS the message, Validations COMPLETELY STOP them from saving—preventing the creation of invalid quotes. 
 	
 	used case:
-				1. to prevent selling two warrenty+instalment bundle for wahing machine
+				1. to prevent selling two warrenty+instalment bundle for washing machine
 				2. prevent more then one 'home secutity console' bundle form selling in a quotes
 				
 	
