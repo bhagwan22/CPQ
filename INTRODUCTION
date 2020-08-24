@@ -14,6 +14,8 @@ PRODUCT RULE
 
 SUMMARY VARIABLE: Summary Variable represents a number that is found by aggregating records(any or all type)
 
+Configuration Attribute:
+
 OPTION CONSTRAINTS: Option constraints control which of a feature’s options may or may not be purchased together. 
 					For example, you could require sales reps to select three out of five possible options within a feature.
 
