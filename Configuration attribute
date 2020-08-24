@@ -1,5 +1,5 @@
 
-Configuration Attributes :
+Configuration Attributes : is created for a product bundle or it's feature 
 -------------------------
 - Create a set of configuration attributes so that users can quickly assign the attributes to multiple product optionsa at once.
 - Each configuration attribute set is shown in a collapsible drawer below each product option in the configurator.
