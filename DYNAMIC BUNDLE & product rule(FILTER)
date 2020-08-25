@@ -17,3 +17,13 @@
 		
 		
    ____________________________________________________________________________________________________________________
+
+
+
+NOW TO CREATE FILETE(product rule) 
+	- name, Type= Filter, Scope = Product, Evaluation event = Always
+	RELATED LIST
+	--------------
+	
+	CONFIGURATION RULE : select rpoduct, Feature
+	ACTION : Type = Default Filter, Filter Field(select same API name as of Product family, if not there add to picklist) = Hardware
