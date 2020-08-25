@@ -4,9 +4,10 @@
  
    ____________________________________________________________________________________________________________________
    
-	DYNAMIC BUNDLE  : some time the options can inc/dec over the period of time, so to allow Bundle to add option automatically we create dynamic bundle
-	--------------
-		# some time the products option can increase over the time. So, To make more flexible bundle i.e CPQ admin do not have to configure bundle to add those option
+	DYNAMIC BUNDLE  : some time the options can inc/dec over the period of time, so to allow Bundle to add option automatically we create dynamic bundle.
+	--------------    i.e not evey time CPQ admin have to configure options
+				EX: we can set any porduct with specific FAMILY should automaticlly included to our bundle	
+		
 		
 		- dynamic bundle can be based on PRODUCT FAMILY, etc... i.e whenever a user will add a product to master List and assign the product family = HARDWARE(example), those product will be automatically available to Bundle inside the quote line editor.
 		
