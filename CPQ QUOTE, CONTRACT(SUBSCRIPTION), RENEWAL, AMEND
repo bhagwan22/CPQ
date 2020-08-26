@@ -1,0 +1,63 @@
+
+													                                          CPQ QUOTE, CONTRACT(SUBSCRIPTION), RENEWAL, AMAND 
+____________________________________________________________________________________________________________________________________________________________________________________
+
+//CREATE QUOTE
+---------------
+1. Contact --> Opportunity --->Quote  ===> Edit Line ---> add PRODUCTS(suppose we add 5 product, out of them 3 are "SUBSCRIPTION PRODUCTS" i.e it will create 3 SUBSCRIPTION RECORDSto It's generated CONTRACT. when we check Opportunity Contracted[checkbox] later)
+2. Check Quote Primary 
+
+
+//CONTRACT BASED SUBSCRIPTION PROCESS
+-----------------------------------
+Opportunity "Contracted" checkbox - created a CONTRACT  (have detail about which opp and Quote have created this contract) 
+									--->and in Related LIST have "Subscriptions" for 'subscription products' [FOR OUR CASE IT WILL CREATE 3]
+									
+									Pre requesit
+									============
+									1. Account should have the right contract settings
+									2. Products should be subscription products
+									3. Quote must have Start Date and Terms
+									
+
+
+
+//RENEWAL PROCESS
+------------------
+Now IF we check contract "Renewal Forcast" = TRUE ==> A RENEWAL OPPORTUNITY Created - only for forecast purpose (THE past opportunity will have lookup filled of Renewal Opportunity)
+															- Renewal will only have products that reflect renewable subscription items form original opportunity
+															- Renewal(checkbox) is checked for renewal Opportunity
+															- Closed date = Past Contract End date
+															- Have a lookup to CONTRACT(Renewed Contract) - the contract that had originated this renewal(Past Contract)
+															- and Subsequently chain follow(if CONTRACTED(checkbox) true) step 1
+															
+															
+
+//AMANDMENT PROCESS
+--------------------
+	# IF CUSTOMER WANT TO MAKE A CHANGE AFTER FEW MONTH GONE BY  - Like increasing the quantity BUT ALL SHOULD BE END ON THA SAME TERM(end date) ---> we user Amend button on Contract
+	
+	Amend(BUTTON) on contract 
+	ON CLICK event
+	--------------
+					Behind the scene we have created a
+					1. Amandment opportunity
+					2. Amandment Quote + marked primary for the above Amandment Opportunity
+					3. Takes us to directly Quote Line Editor
+						IMPORTANT:
+						----------
+							A) Quote Line editor shows us the Products(quantity, UnitPrice) but Net price = $0 because(It shows us the products customer already paid for/purchased)
+							Now that if we make changes(+ve or -ve[i.e return]) cahnges to Quantity The Net new price for the new configured products will be reflected in Net Total
+							
+		
+					4. NOW if we Save the QuoteLineEditor. we redirected to 'Amandment Quote' (that have lookup to Amandment Opportunity)
+					5. the ' Amandment Opportunity' will have a reference to CONTRACT THAT IS AMANDED(original contract)
+					
+					6. NOW if the AMANBED OPPORTUNITY  "Contracted(checkbox)" checked ==> It update the "Subscription related List" of Original Contract
+
+
+
+NOTE: Sometime cuatomer can ask to Amand and till then we have created Renewal, i.e Renewal will only have "Subscription products" that parent opportunoty have at time of renewal(checkbox)=True, So to Sync all the Amanded subscription products(of original opportunity) [ONCE ALL AMANDMENT DONE + AMANBED OPPORTUNITY  "Contracted(checkbox)" =checked] we must check "Renewal Quote" check box form Original Contact(contract get ammanded subscription products) ==> It will sync Amanded products to Reneal product.
+
+____________________________________________________________________________________________________________________________________________________________________________________
+
