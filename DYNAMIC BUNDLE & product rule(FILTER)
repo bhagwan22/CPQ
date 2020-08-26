@@ -9,11 +9,12 @@
 				EX: we can set any porduct with specific FAMILY should automaticlly included to our bundle	
 		
 		
-		- dynamic bundle can be based on PRODUCT FAMILY, etc... i.e whenever a user will add a product to master List and assign the product family = HARDWARE(example), those product will be automatically available to Bundle inside the quote line editor.
+		- dynamic bundle can be based on PRODUCT FAMILY, etc... 
+			Ex: whenever a user will add a product to master List and assign the product family = HARDWARE(example), those product will be automatically available to Bundle inside the quote line editor.
 		
-		- FEATURE(option selection Method = Dynamic)
+		- FIRST - thing for dynamic bundle is -  FEATURE (with option selection Method = Dynamic)
 		
-		- create field on product and product option(same API name)
+		- create field on product and product option(same API name) and add it's API name to Product Action object filed 'Filter Field' picklist //TO USE ON product rule FILER FILED section
 		
 		
    ____________________________________________________________________________________________________________________
@@ -21,9 +22,13 @@
 
 
 NOW TO CREATE FILETE(product rule) 
-	- name, Type= Filter, Scope = Product, Evaluation event = Always
+	- name, Type= Filter, Scope = PRODUCT, Evaluation event = Always
 	RELATED LIST
 	--------------
 	
-	CONFIGURATION RULE : select rpoduct, Feature
-	ACTION : Type = Default Filter, Filter Field(select same API name as of Product family, if not there add to picklist) = Hardware
+	CONFIGURATION RULE : select Product(lookup), Feature(lookup)
+	
+	now add
+	
+	ACTION : Type = Default Filter, 
+		Filter Field(select same API name as of Product family, if not there add to picklist) = Hardware
