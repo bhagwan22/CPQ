@@ -2,6 +2,8 @@
 													                                          CPQ QUOTE, CONTRACT(SUBSCRIPTION), RENEWAL, AMAND 
 ____________________________________________________________________________________________________________________________________________________________________________________
 
+https://www.youtube.com/watch?v=vl3lkVqQbTc
+
 //CREATE QUOTE
 ---------------
 1. Contact --> Opportunity --->Quote  ===> Edit Line ---> add PRODUCTS(suppose we add 5 product, out of them 3 are "SUBSCRIPTION PRODUCTS" i.e it will create 3 SUBSCRIPTION RECORDSto It's generated CONTRACT. when we check Opportunity Contracted[checkbox] later)
