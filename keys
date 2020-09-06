@@ -1,0 +1,40 @@
+
+# INSTALLED PRODUCT --> CPW--> CONFIG ===> many setting option
+										1. how bundle will look like
+										2. how quote template will privew whole screan/small
+
+# higher order "evaluation rule" wins in case of conflict(in execution of product rule)
+
+#TO ENABLE RENEWAL PROCESS
+form ACCOUNT WE HAVE TO SPECIFY
+	- Renewal Model
+	- Renewl Priceing Method
+  
+# Contract not generate IF
+	1. Product missing subscription values
+	OR
+	2. account not configured with sunscription setting
+	OR
+	3. Quote missing start date
+  
+# if product "subscription term" is 6 and we have included it into a Quote of "Subscription term" of 12 month then PRODUCT price is auto calculated based on the quote term in this case twice
+
+  
+#IF WORKING WITH CONTRACT/SUBSCRIPTION/CO-TERM 
+- we must add quote start date + terms
+
+# once PRICE RULE ERROR visible it WILL KEEP ON APPEARING even if you not hitting the validation - CPQ LIMITATION
+
+#FOR RENEWAL AN OPPORTUNITY MUST HAVE A - PRODUCT IS MARKED AS SUBSCRIPTION PRODUCT + Account should have subscription setting
+
+#ALL SUBSCTIPTION BASED PRODUCT WILL UNDER SUBSCTIPTION OF CONTRACT
+   AND
+   NON SUBSCRIPTION BASED WILL BE ASSET OF RELATED ACCOUNT
+
+#FORM A SINGLE QUOTE WE CAN CREATE MULTIPLE CONTRACT based on END DATE
+
+#PRODUCT RULE validation and normal validation then diff is that only PRODUCT RULE VALIDATION comes right in the product configuration page also it mainting the order of execution of product rule
+
+#if product option is marked as BUNDLED(checkbox) them it will act as free for the bundle i.e price displayed as $0 because them CPQ consider this option price is inclued in Bundled price already
+
+
