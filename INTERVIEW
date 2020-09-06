@@ -1,0 +1,81 @@
+
+
+# Quote PDF document is stored on both your quote and your opportunity.
+DYNAMIC QUOTE: For example, you can hide specific columns in the line items table under certain conditions. Specific pages, sections, and even individual quote terms can appear dynamically as well. You can add to the output by attaching supplemental materials, such as product specification sheets, to get a single, concatenated PDF.
+
+Bundle 
+-------
+Configurable Bundle : Salesforce admin can group products in a set and enforce rules to ensure the set is complete and accurate as per the business logic. These sets are called bundles.
+
+
+# CPQ center=BUNDLE( A bundle is simply a group of products we know should be sold together )
+	- Bundle have a lead product(thar always will be there)
+	 and rest products are added to option
+	 
+# Salesforce CPQ makes selling complicated product offerings easy by giving sales reps premade product bundles to choose from, and even tweak as needed. With bundles, your sales reps can create accurate quotes in record time.
+# CPQ halp sales rep to make sense of wide variety of products 
+# in product option - A blank quantity field causes CPQ to leave quantity editable, so the Quantity Editable field is ignored (NOT not the 'min Quantity')
+
+
+3 TYPE OF BUNDLE:
+-----------------
+1. Static Bundle : everything is fix(ex: McDonald double chicken gril burger)
+2. Configurable Bundle: can be configured with some limitation to prevent impossible configuration(EX: Aalu ka paratha)
+3. Nested Bundel: Bundle inside another bundle(KFC Meal)
+
+
+CUSTOMISATION as per our expression
+-----------------------------------
+- control when user can configure bundle, validation - great way to make sure they sell the right products together 
+- PRODUCT 2field 'Configuration Type and Configuration Event" - control when and how a user can configure the bundle.
+	Configurable type = Allowed OR Disabled
+	Configuration evetn = Always OR Add OR Edit OR N/ACCOUNT
+	
+# Typically, when a rep uses groups to organize their quote lines, they want all products within a bundle to appear in a single group. Furthermore, they want the entire bundle to stay together when moved into a different group. The Keep Bundles Together package level setting is enabled by default,
+
+3 IF ADDED MULTPLE BUNDEL- To make bundles easier to distinguish in the Quote Line Editor, i,e TO to see which product goes with which bundle, We have to check 'VISUALIZE PRODUCT HIERARCHY'
+
+
+PRODUCT TYPE
+------------
+One-time
+Subscription 
+
+Priceing list created(Price book) by
+----------------------------------
+cost-plus?
+markup
+block
+customize pricing method
+
+
+GUIDED SELLING:
+--------------
+step-by-step configuration
+Some time customer does not know what product/service will best suit his business and Sometimes you don’t know what products are best either.
+Salesforce CPQ can help by leading you through a guided selling process. When you answer a series of questions [1], you get a list of suggested products that fit the bill.
+
+
+
+CPQ TYPES nd PRICING
+------------------
+CPQ (cpq and enhanced product catelog & price book)
+CPQ+ (approval and order management)
+CPQ & Billing-(Unify sales and Finence - quote, order Management,Revenue scheduling and invoicing)
+CPQ & Billing +(complex Revenue reporting, Automated Payment)
+
+
+CPQ Pricing Methods
+-------------------
+### When you add products to a quote, your quote automatically calculates the product prices. After that, any updates to your quote, such as changes in the quantity of the products, are reflected in the quote pricing. Subscription products and prices are automatically calculated as well, based on the subscription term you defined when you created the quote.
+- CONTRACTED PRICE:	// if wanted to create special price for he customer
+- COST PRICE + Markup: 
+- Block Price: specific price for certain quantity rang //defines the various quantity blocks and the price associated with each block.
+
+DISCOUNT SCHEDULE:
+-------------------
+ex: for automatically discount based on Contract term, or product volume
+
+PRICING RULE
+------------
+
