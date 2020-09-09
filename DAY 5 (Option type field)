@@ -1,0 +1,28 @@
+
+
+          @@@ OPTION TYPE @@@
+          -------------------
+
+1. Component :
+   ----------  this make option part of component i.e id we have added 2 qunatiy in configration page for option. And we have added 3 bundles i.e the total count of this type of option is 2*3 =6
+   OR
+   It link a option record to individual bundle i.e if multiple quantity of bundle added then the total option product will be (quantity of bundle * quantity of option)
+
+2. Assessory	: 	
+   ---------		
+   This make the option quantity fixed even though multiple product bundle are added. if we have set quantity to 5 then it will count as overall count of that option regardless of how may product bundle added once.
+   OR
+   it is shard amoung all same bundle. i.e its quantity will be fixed irrespective of how may bundle quantity we add.
+   ex: training- hours for saleforce even if we take how many licences
+   
+3. Related Product:
+   -----------------
+		similar to accessory + Gives flexibility to edit quantity Line (option) after configuration page.
+		NOTE: We can set up a bundle to control what changes the sales rep can make during configuration, but those controls are not in effect after configuration on the Quote Line Editor.
+	
+	
+# The Quote Line Visibility field on the option is a picklist that determines when options are seen after configuration. Here are the settings.
+
+Document Only: Hides the item from the Quote Line Editor, shows it on the output document.
+Editor Only: Hides the item from the output document, shows it in the Quote Line Editor.
+Never: Hides it from both Quote Line Editor and the output document.
