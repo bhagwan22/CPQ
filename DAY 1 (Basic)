@@ -52,9 +52,9 @@
 (#) PRODUCT:  we have to Allow(Configuratin type/Event) form product if it is ready for the configurable screan(i.e once product bundle is ready)
 
 Product Related list
-(#) OPTIONS(Production Option): 
+(#) OPTIONS(Production Option): products that are sell together with main product
 
-(#) Feature(Product Feature) : bundling tool for Options
+(#) Feature(Product Feature) : group Options together in bundle
 
 - we can make an OPTIONS required, automatically selected, quantity, min quantity, edit quantity if already specified(allow checkbox), Number( 10, 20, 30 i.e order), FEATURE(lookup)
 
