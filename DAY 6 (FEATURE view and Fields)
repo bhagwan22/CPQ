@@ -1,0 +1,51 @@
+
+															TYPES of FEATURE view
+															-----------------------
+
+
+# form feature record we can set min or max no. of options that a sales rep can select. if Max set to 1. then in that feature all we will se radio button to check only one of the option out of all option.
+
+# if we delete bundle from quoteLine item then it's it related options are not deleted automatically
+
+
+	FEATURE: fields/functionality
+	-----------------------------
+Option Selection Method(field) :  
+	1. Click/Null --> same display opiton when we select bundle product in configuration page
+	2. add  --> on configuration page got a add option link and add accordingly options to feature
+	3. dynamic
+
+
+# Any field created over 'PRODUCT FEATURE' object will be dispalyed over the configuration page filter sectionon if have valida data.
+
+# We can decide which columns display in features on the configuration page.
+
+# We can make the bundle configuration experience even better by changing the user interface to present features in tabs instead of sections—or even choose a combination of tabs and sections
+
+#IMPORTANT: The Option Layout field ON THE LEAD PRODUCT determines the layout and user experience of configuration pages for bundles that use features. There are three values for Option Layout: sections, tabs, and wizard.
+ - wizard: similar to tab i.e every feature have it's own tab except that user must have to go thorough each provous tab to open one at last.
+
+
+# WE CAN ALSO HAVE 'Feature Category' and each all filter catefory will be main tab. and all filtre in a filter category are shown in each section under those tab.
+use case
+----------
+Imagine we have a Smartphone bundle with four features. Chargers and Service features are the most important, so we put them together on a tab named Essentials. The other features, Cables and Cases, are on a separate tab.
+NOTE: categories overrides any Option Layout you selected on the lead product of the bundle.
+
+## PRODUCT FEATURE -->Configuration Field Set(PICKLIST)
+----------------------------- : 
+with this we decide which field of PRODUCT option we wanted to display of option product at configuration page
+NOTE: We can only put fields from the Product Option object into the field set. If you want information from the Product record to appear, create a formula field on the Product Option object that returns the value pulled from the Product field.
+
+				setup--> PRODUCT OPTION(object) --> field set -->  New =>(name, Where is this used?=Configurator) --> Select field to display
+				
+				Now to allow this field set as an option to select field set. 
+				Add fiel Set name to 'product feature' Object --> field and relationship --> Add field set name to 'Configuration Field Set'(picklist)
+				
+	THEN
+	
+	we can selectg it form Feature -->'Configuration Field Set' field 
+	
+	
+	
+
