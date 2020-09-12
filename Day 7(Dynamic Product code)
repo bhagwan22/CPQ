@@ -1,0 +1,19 @@
+
+
+GENERATE PRODUCT CODE/DESCTIPTION DYNAMICALLY(form option selection): also called 'Package product codes'
+--------------------------------------------------------------------
+
+Advantage: 	Sometimes bundles have special product codes that represent how they’ve been configured. For example, you can give a special code, LAP-P28-R16-H512, to a laptop with a 2.8GHz processor, 16GB RAM, and 512GB hard drive, so that other teams in your business, like order fulfillment, can get configuration information at a glance.
+
+
+## STEPS ##
+
+1. on OPTION  'Advance setting' section. we can decide set the dynamic code option will generate if selected and it's positin(index) in lead product bundle(package).
+
+Component Code  // CODE OPTION WILL GENERATE WHEN SELECTED
+Component Code Position // index where this code will be displayed in LEAD PRODUCT 'Configured Code Pattern' field
+
+2. on the LEAD product set the 'configuration code pattern' ex: LAP{1}{2}{3}
+
+3. we can check the dynamic code generatied on 'Package Product code' on Lead Product.
+
