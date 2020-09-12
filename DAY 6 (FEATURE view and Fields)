@@ -1,6 +1,6 @@
 
-															TYPES of FEATURE view
-															-----------------------
+									TYPES of FEATURE view
+									-----------------------
 
 
 # form feature record we can set min or max no. of options that a sales rep can select. if Max set to 1. then in that feature all we will se radio button to check only one of the option out of all option.
@@ -32,15 +32,19 @@ use case
 Imagine we have a Smartphone bundle with four features. Chargers and Service features are the most important, so we put them together on a tab named Essentials. The other features, Cables and Cases, are on a separate tab.
 NOTE: categories overrides any Option Layout you selected on the lead product of the bundle.
 
+
+
+//DISPLAY FIELDS TO CONFIGURATION PAGE
+
 ## PRODUCT FEATURE -->Configuration Field Set(PICKLIST)
 ----------------------------- : 
 with this we decide which field of PRODUCT option we wanted to display of option product at configuration page
 NOTE: We can only put fields from the Product Option object into the field set. If you want information from the Product record to appear, create a formula field on the Product Option object that returns the value pulled from the Product field.
 
-				setup--> PRODUCT OPTION(object) --> field set -->  New =>(name, Where is this used?=Configurator) --> Select field to display
+				setup--> PRODUCT OPTION(object) --> select<field set> -->  New =>(name, Where is this used?=Configurator) --> Select field to display
 				
 				Now to allow this field set as an option to select field set. 
-				Add fiel Set name to 'product feature' Object --> field and relationship --> Add field set name to 'Configuration Field Set'(picklist)
+				Add field Set name to 'product feature' Object --> field and relationship --> Add field set name to 'Configuration Field Set'(picklist)
 				
 	THEN
 	
