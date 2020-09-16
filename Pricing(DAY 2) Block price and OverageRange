@@ -3,14 +3,14 @@
 		-----------------------
 			i.e pricing based on quantity
 			here we do not charege based on per unit
-			- to set up  <PRODUCT> ==> related list ==> Block price
+			- to set up  <PRODUCT> ==> related list ==> Block price # here we set the range (lower bound[included], upper bound[excluded] and price) 
 			+
 			- have to make product 'PRICECING METHOD' to Block ,it tell cpq to use block price for this product
 
 	
 
-# Price: The value that replaces the price book price. When block pricing is used for a product, the price book price is ignored. i.e what ever the list price is it will display block price at configuration page
-# we hare set the range (lower bound, upper bound) max value is excluded
+# NOTE: The value that replaces the price book price. When block pricing is used for a product, the price book price is ignored. i.e what ever the list price is it will display block price at configuration page
+
 
 # the block price record tells the no. of quantity and price for them (each block record is said as TIER)
 # in case if customer order quantity beyond what we have mentioned in our block record in this case we uses OverageRate  range. i.e scenario: If a customer needs more than 50 toners recycled, AW Computing charges $45, plus $1 for every toner after 51. (So recycling 52 toners costs $46, 53 toners is $47, and so on.)
