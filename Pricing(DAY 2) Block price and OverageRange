@@ -1,0 +1,42 @@
+
+		@@@@@ BLOCK PRICING @@@
+		-----------------------
+			i.e pricing based on quantity
+			here we do not charege based on per unit
+			- to set up  <PRODUCT> ==> related list ==> Block price
+			+
+			- have to make product 'PRICECING METHOD' to Block ,it tell cpq to use block price for this product
+
+	
+
+# Price: The value that replaces the price book price. When block pricing is used for a product, the price book price is ignored. i.e what ever the list price is it will display block price at configuration page
+# we hare set the range (lower bound, upper bound) max value is excluded
+
+# the block price record tells the no. of quantity and price for them (each block record is said as TIER)
+# in case if customer order quantity beyond what we have mentioned in our block record in this case we uses OverageRate  range. i.e scenario: If a customer needs more than 50 toners recycled, AW Computing charges $45, plus $1 for every toner after 51. (So recycling 52 toners costs $46, 53 toners is $47, and so on.)
+
+# If your org supports multicurrency, be sure to create Block Price records for every currency.
+
+	SETUP OverageRate range (currency(16,2) and label= OverageRate exact)
+	---------------------
+	NOTE: overage rates, we must create a special custom field on Block Price object. This is a one-time step for any org using Salesforce CPQ.
+		
+		- then at the configuration page, set a new tiee 3(Overange)
+		- set it's lower bound
+		- OverageRate = 1  (i.e it will charge $1 for each quantity more then overage lowebound)
+	
+
+EXAMPLE USED CASE:
+	1. small box hold 1-10 pensil = $1(TIER 1)    and   large box hold 10-30 pensil = $3(TIER 2)
+	so if customer order 1-10 pensil, we can charge for a small packing box if more then charge for big pensil box.
+	
+	2. transport cost for 1 to 5 package or 5 to 11 package
+	
+	3. application on 1-4 devices is a flat price of $3, 5-10 devices is a price of $8
+	
+	
+NOTE
+----
+- Sales reps with read-only access to block price and its fields can create block prices by cloning an existing record. To prevent them from creating or modifying block prices, remove the Clone button from the page layout or remove the sales rep's user access to the EditBlockPrices custom page.
+	
+	
