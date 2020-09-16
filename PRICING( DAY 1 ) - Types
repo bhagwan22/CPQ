@@ -1,65 +1,65 @@
 
 
-																			@@@@ CPQ PRICING @@@@
-																			----------------------
-																					
-		NOTE:  
-		- if your quote is using a price book that’s missing a price book entry for a product, that product won’t appear in the product selection page, and can’t be added to the quote.
-		- Remember to also create a price book entry when you create a new product so that the product can be added to quotes. even with the $0 price
-		
-		# Right price to right customer at right time.
-		
-		# Salesforce CPQ can adjust or replace the prices it gets from price books
-		
-		# If have a lot of different types of customers, and each type requires different pricing. You could create a price book for each customer type, but that means maintaining more data, which means more work for
-		This allows you to use fewer price books and still see specific pricing for specific customers and situations. 
-		
-		# Let us implemetn pricing adjustments
-		EXAMPLE:
-			a product that’s sold as part of a bundle can have a different price than one sold on its own. Same product, same price book, two different prices based on the situation.
-			
-		(#) FIVE TYPE OF TOOLS
-		-----------------------
-		
-		1. BLOCK PRICE:	fixed price for a range of quantity.
-						EX: video concurrent viewer $X for 1-3 user and $Y for 4-7 user
-						
-		2. PoT(Percentage of total) :  based on sum/percentage of total price of other products 
-						EX: delivery charges
-							Tip for the pizza delivery is 15% of overall amount of order.
-							
-		3. OPTION pricing Override(OPO)	:	replace price of prodict when it is included within the bundle
-						EX:
-							The price of a burger is $25 when bought in a combo meal, but $30 when bought alone.
-		
-		4. Cost Plus Markup(C+M) price: allow salesRep to add value on top of product cost.
-						EX:
-							A car costs the dealer $30,000, and it’s marked up to $34,000 to make commission.
-							
-		5. Contracted Pricing: Sets account-specific prices 
-						EX: 
-							Your customer Edge Communications pays $200 for a printer while everyone else pays $275.
-							Prime customer pays $10 for cross country shipping but non-prime pays $20.
-							
-		
-		
+						@@@@ CPQ PRICING @@@@
+						----------------------
 
-		# NOTE: Multiple pricing + discount tool can be applicable on same quote.
-		therefore, To keep track of everything that happens, CPQ uses multiple pricing fields on the quote line, each field representing specific pricing adjustments.
-			PRICING FIELD and WHAT THEY REPRESENT : also called 'PRICE WATERFAL' because: price from top to bottom effects the next price down. 
-			-------------------------------------
-			1. ORIGINAL PRICE : 	Pricebook price
-			
-			2. LIST PRICE:			Pricebook price/block price/PoT/OPO
-			
-			3. SPECIFIC PRICE :		Contracted Price/C+M/ OPTION DISCOUNT
-			
-			4. REGULAR PRICE 	:	Result of volume based on discount
-			
-			5. CUSTOMER PRICE	: 	price after manually edited discount
-			
-			6. PARTNER PRICE 	:	Result of partner discount 
-			
-			7. NET PRICE 		:	Result of distributed Discount
-			
-			(#) NET PRICE: what we actually ask the customer to pay for a given product, and what is synchronized to the 'opportunity product price'
+NOTE:  
+- if your quote is using a price book that’s missing a price book entry for a product, that product won’t appear in the product selection page, and can’t be added to the quote.
+- Remember to also create a price book entry when you create a new product so that the product can be added to quotes. even with the $0 price
+
+# Right price to right customer at right time.
+
+# Salesforce CPQ can adjust or replace the prices it gets from price books
+
+# If have a lot of different types of customers, and each type requires different pricing. You could create a price book for each customer type, but that means maintaining more data, which means more work for
+This allows you to use fewer price books and still see specific pricing for specific customers and situations. 
+
+# Let us implemetn pricing adjustments
+EXAMPLE:
+	a product that’s sold as part of a bundle can have a different price than one sold on its own. Same product, same price book, two different prices based on the situation.
+
+(#) FIVE TYPE OF TOOLS
+-----------------------
+
+1. BLOCK PRICE:	fixed price for a range of quantity.
+				EX: video concurrent viewer $X for 1-3 user and $Y for 4-7 user
+
+2. PoT(Percentage of total) :  based on sum/percentage of total price of other products 
+				EX: delivery charges
+					Tip for the pizza delivery is 15% of overall amount of order.
+
+3. OPTION pricing Override(OPO)	:	replace price of prodict when it is included within the bundle
+				EX:
+					The price of a burger is $25 when bought in a combo meal, but $30 when bought alone.
+
+4. Cost Plus Markup(C+M) price: allow salesRep to add value on top of product cost.
+				EX:
+					A car costs the dealer $30,000, and it’s marked up to $34,000 to make commission.
+
+5. Contracted Pricing: Sets account-specific prices 
+				EX: 
+					Your customer Edge Communications pays $200 for a printer while everyone else pays $275.
+					Prime customer pays $10 for cross country shipping but non-prime pays $20.
+
+
+
+
+# NOTE: Multiple pricing + discount tool can be applicable on same quote.
+therefore, To keep track of everything that happens, CPQ uses multiple pricing fields on the quote line, each field representing specific pricing adjustments.
+	PRICING FIELD and WHAT THEY REPRESENT : also called 'PRICE WATERFAL' because: price from top to bottom effects the next price down. 
+	-------------------------------------
+	1. ORIGINAL PRICE : 	Pricebook price
+
+	2. LIST PRICE:			Pricebook price/block price/PoT/OPO  (no discount)
+
+	3. SPECIFIC PRICE :		Contracted Price/C+M/ OPTION DISCOUNT
+
+	4. REGULAR PRICE 	:	Result of volume based on discount    (Automated discount)
+
+	5. CUSTOMER PRICE	: 	price after manually edited discount   (manual discount)
+
+	6. PARTNER PRICE 	:	Result of partner discount 
+
+	7. NET PRICE 		:	Result of distributed Discount   	(Partner and distributor discount)
+
+	(#) NET PRICE: what we actually ask the customer to pay for a given product, and what is synchronized to the 'opportunity product price'
