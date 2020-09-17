@@ -1,0 +1,70 @@
+
+
+  ##### PERCENTAGE OF TOTAL  PRODUCT and Priceing Method ####
+  -----------------------------------------------------------
+  
+ - WE can set a product price based on percent of total i.e depend upon other quote line price(We can configure CPQ to count some products while excluding others for calculating percentage of total)
+ 
+ - we can specify which product can contribute to percentage of total
+ 
+
+# SET up for a given product
+------------------------------
+1. set product 'Pricing Method' = Percentage of Total 
+2. Product 'Percent of Total(%)' field = 20% (i.e it will be equals to 20% of total price of products we considered)
+3. Set 'Percent Of Total Base'  field = list/Regulat/customer/Net  - it determine which  quote line prices are summed for the total(i.e which type of discount)
+		ex:
+			if taken NET i.e it will calculte Percentage of totalPrice(after adding all the discounts)
+
+
+
+# SET PoT for OPTION Priduct
+=============================
+# by default subscription based products are excluded form PoT calculation. But we can include then by checking "Include in Percent Of Total" form PRODUCT.
+but if the product.Subscription term is of  $10/month for is peoduct term(month), then it will remain same $10 even if quote have a term of 2 yera
+
+# If we don't want some products to be included in calculation of Pot, then we can use PRODUCT."Exclude From Percent Of Total" checkboz, 
+		Ex:
+		   one time instalation fee, Second time we do not want this should be included in calculation of PoT 
+		   Note:  checking this box excludes the product from all percent of total calculations.
+		   
+
+PERCENTAGE OF TOTAL FOR "Option Product"
+----------------------------------------
+- ProductOption."Percent Of Total Scope" field, determines which products inside/outside/both on bundle are included in the price calculation.
+
+# To exclude a product form PoT Calculation we can just check "Exclude from Percent Of Total" form product.  checking this box excludes the product from all percent of total calculations. But it is better to calculte PoT based on Category thrn "Excluding them"
+
+
+# PoT based on CATEGORY (Product.Percentage_of_Total_Category)
+------------------------------------------------------------
+- add value to Product "Percentage_of_Total_Category"(Picklist) by which category we have to calculate PoT ex: Insurance
+Now add "Insurance" to product.Percentage_of_Total_Category for which PoT is need to calculate and all products what must include to clalculate PoT.
+
+Note: Previously added QuoteLine will not reflect the change have to again config them(STANDARD).
+
+
+# WE CAN even set PoT to apply only if the total price of other product is greater or less then a specif price too(Lets say greater then $500). or else List price will be used.
+Setp:
+	1. got to product for which PoT need to be calculated 
+	2. from 'Price Book' related list Set the List Price = $500
+	3. Then Select the "Percent of total Constraint" = List price is maximum/List price is maximum
+													   [List price is maximum: i.e if PoT is calculate more then List Price them CPQ will consider List price]
+													   [List price is minimum: i.e if PoT is calculate less then List Price them CPQ will consider List price]
+
+
+ 
+
+NOTE: 
+- if this product is included only in the product configuration page it will display $0.00 until any other product is included. But it's better to calculate PoT based on category rather than checking "Exclude form Percentage of Total"
+- percent of total products never include other percent of total priced products in their calculations
+
+
+_______________________________________________________________________________________________________________
+
+EXAMPLE:
+- Insurance cost based on how expensive the other products are
+- Tip based on Total bill
+- secutity cost based on how expensive the product is
+
+_______________________________________________________________________________________________________________
