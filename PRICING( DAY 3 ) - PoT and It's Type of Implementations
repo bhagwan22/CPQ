@@ -18,10 +18,10 @@
 
 
 
-# SET PoT for OPTION Priduct
+# SET PoT for OPTION Product
 =============================
 # by default subscription based products are excluded form PoT calculation. But we can include then by checking "Include in Percent Of Total" form PRODUCT.
-but if the product.Subscription term is of  $10/month for is peoduct term(month), then it will remain same $10 even if quote have a term of 2 yera
+but if the product.Subscription term is of  $10/month for is peoduct term(month), then it will remain same $10 even if quote have a term of 2 year
 
 # If we don't want some products to be included in calculation of Pot, then we can use PRODUCT."Exclude From Percent Of Total" checkboz, 
 		Ex:
