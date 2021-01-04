@@ -1,0 +1,17 @@
+=> CPQ(quote calculator plugin) - some scanerios can not be achived with the price rule, so with the help of QCP we can add extra functionality on top of price calculation.
+# Two type
+1. Legegy calculator(old) : with apex class
+2. Advance calculator(new) : Javascrip
+
+# Custom Script(Object) use to create script
+
+# every method in QCP has two model  1. quoteModel and 2. quoteLineModel with (.) operator we can access there fields
+
+# JS promiss is the best way to write script
+
+# there are 5 events in which script can be executed:
+	1. onInit
+	2. onBeforeCalculate
+	3. onBeforePriceRule
+	4. onAfterPriceRule
+	5. onAfterCalculate
