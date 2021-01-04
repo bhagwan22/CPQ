@@ -15,3 +15,13 @@
 	3. onBeforePriceRule
 	4. onAfterPriceRule
 	5. onAfterCalculate
+
+# every script must 
+	return promise.resolve();
+	
+# lineItem record have a Parent!=null for all bundle option products
+
+Note: Not all fields are available from QCP script. So in custom script record there are filed to difine any of the field(custom) we want to access from Quote, QuoteLine
+
+# CPQ pacakge-> configure-> plugin tab -> Quote Calculator plugin(enter script)
+Note: only one script can be used at a time
