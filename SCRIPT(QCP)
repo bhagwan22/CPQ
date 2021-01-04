@@ -6,6 +6,7 @@
 # Custom Script(Object) use to create script
 
 # every method in QCP has two model  1. quoteModel and 2. quoteLineModel with (.) operator we can access there fields
+And if we want to update any of the SF/CPQ field form script we use the 3rd param conn which use jsforce in backend to perform operation
 
 # JS promiss is the best way to write script
 
